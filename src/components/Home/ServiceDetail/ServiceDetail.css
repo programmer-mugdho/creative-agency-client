@@ -1,0 +1,26 @@
+.service-card {
+    width: 370px;
+    height: 319px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.1);
+}
+
+.service-card div {
+    width: 270px;
+}
+
+.service-card img {
+    width: 74px;
+    height: 74px;
+}
+
+.service-title {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.396px;
+    color: #111430;
+}

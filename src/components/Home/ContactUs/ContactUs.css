@@ -1,0 +1,36 @@
+#contact-us {
+    background-color: #FBD062;
+}
+
+.contact-title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.496px;
+    color: #2D2D2D;
+}
+
+.contact-description {
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.396px;
+}
+
+#contact-us input {
+    padding-left: 20px;
+}
+
+#contact-us input::placeholder {
+    letter-spacing: 0.396px;
+    color: rgba(0, 0, 0, 0.3);
+    /* padding-left: 10px; */
+}
+
+#contact-us textarea::placeholder {
+    letter-spacing: 0.396px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#contact-us textarea {
+    padding-left:20px;
+    padding-top: 20px;
+}

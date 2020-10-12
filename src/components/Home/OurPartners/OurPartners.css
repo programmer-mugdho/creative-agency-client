@@ -1,0 +1,33 @@
+.our-partners {
+    height: 65px;
+    width: 970px;
+}
+
+/* .our-partners img{
+    max-width: 165px;
+} */
+
+.our-partners img:nth-child(1) {
+    width: 140px;
+    height: 36px;
+}
+
+.our-partners img:nth-child(2) {
+    width: 130px;
+    height: 45px;
+}
+
+.our-partners img:nth-child(3) {
+    width: 100px;
+    height: 55px;
+}
+
+.our-partners img:nth-child(4) {
+    width: 120px;
+    height: 65px;
+}
+
+.our-partners img:nth-child(5) {
+    width: 160px;
+    height: 50px;
+}
