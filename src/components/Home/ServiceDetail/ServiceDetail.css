@@ -3,6 +3,7 @@
     height: 319px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .service-card:hover {

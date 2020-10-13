@@ -25,6 +25,7 @@ const services = [
 ]
 
 const OurServices = () => {
+
     return (
         <section className='container text-center my-5 py-5'>
             <h2 className='services-title'>Provide awesome <span>services</span></h2>

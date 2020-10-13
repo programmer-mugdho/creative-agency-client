@@ -1,3 +1,7 @@
 .sidebar {
     height: 95vh;
 }
+
+.sidebar li, .sidebar img {
+    cursor: pointer;
+}

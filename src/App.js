@@ -5,8 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
-import AdminDashboard from './components/Dashboard/Admin/AdminDashboard/AdminDashboard';
-import CustomerDashboard from './components/Dashboard/Customer/CustomerDashboard/CustomerDashboard';
+import CustomerDashboard from './components/Dashboard/Dashboard/Dashboard';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/Login/PrivateRoute'
@@ -25,11 +24,8 @@ function App() {
           <Route path='/login'>
             <Login />
           </Route>
-          <PrivateRoute path='/dashboard/customer'>
+          <PrivateRoute path='/dashboard'>
             <CustomerDashboard />
-          </PrivateRoute>
-          <PrivateRoute path='/dashboard/admin'>
-            <AdminDashboard />
           </PrivateRoute>
         </Switch>
       </Router>
