@@ -8,6 +8,7 @@ import './CustomerDashboard.css'
 
 const CustomerDashboard = () => {
     const [navigation, setNavigation] = useState('Review')
+    
     return (
         <section className='CustomerDashboard'>
             <div className='row'>
