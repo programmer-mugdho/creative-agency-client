@@ -14,13 +14,13 @@ const feedbacks = [
     },
     {
         name: 'Miriam Barron',
-        img: customer1,
+        img: customer2,
         designation: 'CEO, Manpol',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat '
     },
     {
         name: 'Bria Malone',
-        img: customer1,
+        img: customer3,
         designation: 'CEO, Manpol',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat '
     },

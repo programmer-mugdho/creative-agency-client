@@ -4,3 +4,11 @@
     border: 1px solid #BFBFBF;
     border-radius: 4px;
 }
+
+.feedback-card img {
+    width: 64px;
+}
+
+.name-container{
+    transform: translateY(10px);
+}
