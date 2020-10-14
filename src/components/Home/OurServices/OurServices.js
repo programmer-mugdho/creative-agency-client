@@ -5,7 +5,6 @@ import service2 from '../../../images/icons/service2.png'
 import service3 from '../../../images/icons/service3.png'
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
-
 const services = [
     {
         title: 'Web & Mobile design',

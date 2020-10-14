@@ -10,7 +10,7 @@ import MakeAdmin from '../Admin/MakeAdmin/MakeAdmin';
 import './Dashboard.css'
 
 const CustomerDashboard = () => {
-    const isAdmin = false
+    const isAdmin = true
     const [navigation, setNavigation] = useState(isAdmin ? 'Admin Service list' : 'Order')
     return (
         <section className='CustomerDashboard'>
