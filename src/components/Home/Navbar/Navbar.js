@@ -1,7 +1,9 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import logo from '../../../images/logos/logo.png'
 
 const Navbar = () => {
+    const history = useHistory()
     return (
         <nav className="navbar navbar-expand-lg navbar-light container">
             <a className="navbar-brand" href="#"><img src={logo} style={{ width: '150px' }} alt="" /></a>
@@ -11,7 +13,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item mr-3 active">
-                        <a style={{ borderBottom:'4px solid #7AB259'}} className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <a style={{ borderBottom: '4px solid #7AB259' }} className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item mr-3">
                         <a className="nav-link" href="#">Our Portfolio</a>
@@ -23,7 +25,7 @@ const Navbar = () => {
                         <a className="nav-link" href="#">Contact Us</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn btn-brand px-5" href="#">Login</a>
+                        <a onClick={() => history.push('/login')} className="nav-link btn btn-brand px-5" href="#">Login</a>
                     </li>
                 </ul>
             </div>
