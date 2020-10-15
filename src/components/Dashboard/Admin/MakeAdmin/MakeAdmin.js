@@ -11,7 +11,11 @@ const MakeAdmin = () => {
             body: JSON.stringify(data)
         })
             .then(res => res.json())
-            .then(result => console.log(result))
+            .then(result => {
+                if(result){
+                    alert("Admin added successfully")
+                }
+            })
     }
     return (
         <div className='MakeAdmin p-4'>
@@ -19,7 +23,7 @@ const MakeAdmin = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <p className="m-0">Email</p>
                     <input required ref={register} type="email" placeholder='jon@gmail.com' name="email" id="" className="form-control" />
-                    <button className="btn btn-success ml-2 px-4">Submit</button>
+                    <button className="btn btn-success px-4">Submit</button>
                 </form>
             </div>
         </div>

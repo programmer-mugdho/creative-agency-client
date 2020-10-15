@@ -9,6 +9,12 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width: 576px) {
+    .service-form{
+        height: 360px;
+    }
+}
+
 .service-form input{
     height: 40px;
 }

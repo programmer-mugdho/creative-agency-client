@@ -4,6 +4,12 @@
     position: relative;
 }
 
+@media screen and (max-width: 576px) {
+    .header{
+        height: 950px;
+    }
+}
+
 .header::before {
     content: '';
     position: absolute;
@@ -21,9 +27,4 @@
     line-height: 60px;
     letter-spacing: 0.01em;
     color: #111430;
-}
-
-.header-image {
-    height: 423px;
-    width: 625px;
 }

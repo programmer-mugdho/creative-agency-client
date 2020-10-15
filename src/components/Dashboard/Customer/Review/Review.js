@@ -26,12 +26,16 @@ const Review = () => {
     return (
         <div className='review-container order-container p-4'>
             <div className="container">
-                <form onSubmit={handleSubmit(onSubmit)} className="order-form form-group pt-1">
-                    <input ref={register} value={name} placeholder="Your name" className='form-control mb-3' type="text" name="name" id="" required />
-                    <input ref={register} placeholder="Company's name, Designation" className='form-control mb-3' type="text" name="designation" id="" required />
-                    <textarea ref={register} placeholder='Project Detail' name="detail" id="" cols="30" rows="8" className="form-control mb-3" required />
-                    <button className="btn btn-brand">Submit</button>
-                </form>
+                <div className="row">
+                    <div className="col-md-6">
+                        <form onSubmit={handleSubmit(onSubmit)} className="order-form form-group pt-1">
+                            <input ref={register} value={name} placeholder="Your name" className='form-control mb-3' type="text" name="name" id="" required />
+                            <input ref={register} placeholder="Company's name, Designation" className='form-control mb-3' type="text" name="designation" id="" required />
+                            <textarea ref={register} placeholder='Project Detail' name="detail" id="" cols="30" rows="8" className="form-control mb-3" required />
+                            <button className="btn btn-brand">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     );

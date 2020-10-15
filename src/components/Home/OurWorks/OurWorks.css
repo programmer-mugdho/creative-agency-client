@@ -4,6 +4,12 @@
     color: white;
 }
 
+@media screen and (max-width: 576px) {
+    .our-works{
+        height: 730px;
+    }
+}
+
 .works-title {
     color: white;
     font-weight: 600;

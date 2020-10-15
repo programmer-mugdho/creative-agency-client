@@ -9,7 +9,7 @@ const ContactUs = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <h1 className='contact-title'>Let us handle your <br /> project, professionally.</h1>
-                            <p className='contact-description mt-4'>With well written codes, we build amazing apps for all <br /> platforms, mobile and web apps in general.</p>
+                            <p className='contact-description my-4'>With well written codes, we build amazing apps for all <br /> platforms, mobile and web apps in general.</p>
                         </div>
                         <div className="col-md-6">
                             <form onSubmit={e => e.preventDefault()} className='form-group'>

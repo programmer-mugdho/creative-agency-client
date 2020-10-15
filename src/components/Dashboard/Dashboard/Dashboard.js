@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
 import Topbar from '../../Shared/Topbar/Topbar';
 import Order from '../Customer/Order/Order';
@@ -7,11 +7,26 @@ import Review from '../Customer/Review/Review';
 import AdminServiceList from '../Admin/AdminServiceList/AdminServiceList';
 import AddService from '../Admin/AddService/AddService';
 import MakeAdmin from '../Admin/MakeAdmin/MakeAdmin';
+import jwt_decode from 'jwt-decode'
 import './Dashboard.css'
 
 const CustomerDashboard = () => {
-    const isAdmin = false
+    const decodedToken = jwt_decode(sessionStorage.getItem('token'));
+    const { email, picture } = decodedToken
+    const [isAdmin, setIsAdmin] = useState(false)
+    console.log(isAdmin)
     const [navigation, setNavigation] = useState(isAdmin ? 'Admin Service list' : 'Order')
+    useEffect(() => {
+        fetch('http://localhost:5000/allAdmins/' + email)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setIsAdmin(data)
+                if(data){
+                    setNavigation("Admin Service list")
+                }
+            })
+    }, [])
     return (
         <section className='CustomerDashboard'>
             <div className='row'>

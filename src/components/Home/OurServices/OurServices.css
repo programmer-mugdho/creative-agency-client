@@ -9,3 +9,10 @@
 .services-title span {
     color: #7AB259;
 }
+
+@media screen and (max-width: 576px) {
+    .service-card {
+        margin: auto;
+        width: 320px !important;
+    }
+}

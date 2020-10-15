@@ -3,7 +3,7 @@
 }
 
 .order-form {
-    width: 570px;
+    /* width: 570px; */
 }
 
 .order-form input {
@@ -36,4 +36,10 @@
     height: 60px;
     transform: translateY(-1px);
     padding-top: 17px;
+}
+@media screen and (max-width: 576px) {
+    #upload-label{
+        transform: translateY(-10px);
+        margin-right: 15px;
+    }
 }

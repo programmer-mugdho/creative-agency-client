@@ -2,10 +2,11 @@ import React from 'react';
 import './FeedbackDetail.css'
 
 const FeedbackDetail = ({ feedback }) => {
-    const { name, img, description, designation} = feedback
+    console.log(feedback)
+    const { name, img, detail, designation} = feedback
     return (
         <div className="col-md-4">
-            <div className='feedback-card'>
+            <div className='feedback-card mb-3'>
                 <div className="p-4">
                     <div className='pb-1'>
                         <img src={img} alt="" className="rounded-circle" />
@@ -15,7 +16,7 @@ const FeedbackDetail = ({ feedback }) => {
                         </div>
                     </div>
                     <div>
-                        <p className='text-secondary'>{description}</p>
+                        <p className='text-secondary'>{detail}</p>
                     </div>
                 </div>
             </div>

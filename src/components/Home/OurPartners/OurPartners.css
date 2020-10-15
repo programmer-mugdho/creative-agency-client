@@ -1,11 +1,13 @@
 .our-partners {
-    height: 65px;
-    width: 970px;
+    /* height: 65px; */
+    /* width: 970px; */
+    margin: auto;
+    overflow-x: hidden;
 }
 
-/* .our-partners img{
-    max-width: 165px;
-} */
+.our-partners img{
+    margin: 0 10px;
+}
 
 .our-partners img:nth-child(1) {
     width: 140px;

@@ -5,10 +5,17 @@
     border-radius: 4px;
 }
 
+@media screen and (max-width: 576px) {
+    .feedback-card {
+        width: 320px;
+        margin: auto;
+    }
+}
+
 .feedback-card img {
     width: 64px;
 }
 
-.name-container{
+.name-container {
     transform: translateY(10px);
 }
