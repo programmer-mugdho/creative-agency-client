@@ -14,7 +14,6 @@ const Dashboard = () => {
     const decodedToken = jwt_decode(sessionStorage.getItem('token'));
     const { email, picture } = decodedToken
     const [isAdmin, setIsAdmin] = useState(false)
-    console.log(isAdmin)
     const [navigation, setNavigation] = useState(isAdmin ? 'Admin Service list' : 'Order')
     useEffect(() => {
         fetch('https://creative-agency-site.herokuapp.com/allAdmins/' + email)

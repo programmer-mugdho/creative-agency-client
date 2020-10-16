@@ -12,10 +12,7 @@ const AdminServiceList = () => {
     }, [])
 
     const handleChange = (e) => {
-        console.log(e.target.value)
-        console.log(e.target.name);
         const data = { id: e.target.name, status: e.target.value }
-        console.log(data);
         fetch('https://creative-agency-site.herokuapp.com/updateOrder', {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },

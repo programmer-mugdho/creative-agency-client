@@ -2,7 +2,6 @@ import React from 'react';
 import './FeedbackDetail.css'
 
 const FeedbackDetail = ({ feedback }) => {
-    console.log(feedback)
     const { name, img, detail, designation} = feedback
     return (
         <div className="col-md-4">
