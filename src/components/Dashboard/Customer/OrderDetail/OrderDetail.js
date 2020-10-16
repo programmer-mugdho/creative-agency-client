@@ -24,8 +24,7 @@ const OrderDetail = ({ order }) => {
         <div className="col-md-6">
             <div className="order-card p-4 mb-5">
                 <div className="order-top d-flex justify-content-between align-items-start">
-                    {/* <img width='74' src={img} alt="" /> */}
-                    <img width={74} src={`data:image/png;base64,${image.img}`} className='rounded-circle' alt="" />
+                    <img width={74} height={74} src={`data:image/png;base64,${image.img}`} className='rounded-circle' alt="" />
                     <button style={statusBtnStyles} className="btn">{status}</button>
                 </div>
                 <p className="order-title mt-3">{work}</p>

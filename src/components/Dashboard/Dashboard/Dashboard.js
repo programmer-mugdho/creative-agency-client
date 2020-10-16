@@ -10,19 +10,18 @@ import MakeAdmin from '../Admin/MakeAdmin/MakeAdmin';
 import jwt_decode from 'jwt-decode'
 import './Dashboard.css'
 
-const CustomerDashboard = () => {
+const Dashboard = () => {
     const decodedToken = jwt_decode(sessionStorage.getItem('token'));
     const { email, picture } = decodedToken
     const [isAdmin, setIsAdmin] = useState(false)
     console.log(isAdmin)
     const [navigation, setNavigation] = useState(isAdmin ? 'Admin Service list' : 'Order')
     useEffect(() => {
-        fetch('http://localhost:5000/allAdmins/' + email)
+        fetch('https://creative-agency-site.herokuapp.com/allAdmins/' + email)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setIsAdmin(data)
-                if(data){
+                if (data) {
                     setNavigation("Admin Service list")
                 }
             })
@@ -53,4 +52,4 @@ const CustomerDashboard = () => {
     );
 };
 
-export default CustomerDashboard;
+export default Dashboard;

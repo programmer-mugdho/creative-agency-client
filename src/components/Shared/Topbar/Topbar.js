@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
-import { UserContext } from '../../../App';
+import React from 'react';
 import jwt_decode from 'jwt-decode'
 
 const Topbar = () => {
-    const [user, setUser] = useContext(UserContext)
     const decodedToken = jwt_decode(sessionStorage.getItem('token'));
     const { name, picture } = decodedToken
     return (

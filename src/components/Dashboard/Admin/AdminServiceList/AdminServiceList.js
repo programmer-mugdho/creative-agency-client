@@ -4,24 +4,9 @@ import './AdminServiceList.css'
 const AdminServiceList = () => {
     const [orders, setOrders] = useState([])
 
-    // const optionStyles = {}
-    // const selectStyles = {}
-
-    // if (status === "Pending") {
-    //     optionStyles.color = "#FF4545"
-    //     selectStyles.color = "#FF4545"
-
-    // } else if (status === "On Going") {
-    //     optionStyles.color = "#FFBD3E"
-    //     selectStyles.color = "#FFBD3E"
-    // } else if (status === "Done") {
-    //     optionStyles.color = "#009444"
-    //     selectStyles.color = "#009444"
-    // }
-
     const status = ['Pending', 'On Going', 'Done']
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://creative-agency-site.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -31,7 +16,7 @@ const AdminServiceList = () => {
         console.log(e.target.name);
         const data = { id: e.target.name, status: e.target.value }
         console.log(data);
-        fetch('http://localhost:5000/updateOrder', {
+        fetch('https://creative-agency-site.herokuapp.com/updateOrder', {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
@@ -78,20 +63,6 @@ const AdminServiceList = () => {
                                     </td>
                                 </tr>)
                         }
-                        {/* <tr>
-                            <td>Mugdho Snigdho</td>
-                            <td>mugdho@gmail.com</td>
-                            <td>Graphic Design</td>
-                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                            <td>Pending</td>
-                        </tr>
-                        <tr>
-                            <td>Mugdho Snigdho</td>
-                            <td>mugdho@gmail.com</td>
-                            <td>Graphic Design</td>
-                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                            <td>Pending</td>
-                        </tr> */}
                     </tbody>
                 </table>
             </div>

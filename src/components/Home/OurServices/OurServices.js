@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './OurServices.css'
-import service1 from '../../../images/icons/service1.png'
-import service2 from '../../../images/icons/service2.png'
-import service3 from '../../../images/icons/service3.png'
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 const OurServices = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allServices')
+        fetch('https://creative-agency-site.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

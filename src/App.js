@@ -5,10 +5,11 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
-import CustomerDashboard from './components/Dashboard/Dashboard/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/Login/PrivateRoute'
+import NotFound from './components/NotFound/NotFound';
 
 export const UserContext = createContext()
 
@@ -25,8 +26,11 @@ function App() {
             <Login />
           </Route>
           <PrivateRoute path='/dashboard'>
-            <CustomerDashboard />
+            <Dashboard />
           </PrivateRoute>
+          <Route path='*'>
+            <NotFound />
+          </Route>
         </Switch>
       </Router>
     </UserContext.Provider>
