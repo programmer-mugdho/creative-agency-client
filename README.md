@@ -20,6 +20,7 @@ ___
 - Bootstrap
 - React Hook Form
 - Owl Carousel
+- Font Awesome
 - JWT Token
 - CSS
 - HTML
